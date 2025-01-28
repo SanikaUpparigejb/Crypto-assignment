@@ -1,8 +1,5 @@
 def extended_euclidean(a, b):
-    """
-    Function to compute the GCD of two numbers and find x, y such that:
-    ax + by = gcd(a, b)
-    """
+    
     if a == 0:
         return b, 0, 1
     gcd, x1, y1 = extended_euclidean(b % a, a)
@@ -11,10 +8,7 @@ def extended_euclidean(a, b):
     return gcd, x, y
 
 def modular_inverse(a, m):
-    """
-    Function to find the modular inverse of a under modulo m.
-    It returns the modular inverse x such that (a * x) % m = 1.
-    """
+   
     gcd, x, _ = extended_euclidean(a, m)
     if gcd != 1:
         raise ValueError(f"Modular inverse does not exist for a={a} and m={m} (not coprime).")
