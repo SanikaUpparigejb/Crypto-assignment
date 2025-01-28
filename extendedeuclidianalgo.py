@@ -30,3 +30,18 @@ if __name__ == "__main__":
         print(f"Verification: ({a} * {mod_inverse}) % {m} = {(a * mod_inverse) % m}")
     except ValueError as e:
         print(e)
+
+'''
+OUTPUT:
+1. Modular Multiplicative Inverse Finder
+   Enter the number (a): 13
+   Enter the modulo (m): 26
+   Modular inverse does not exist for a=13 and m=26 (not coprime).
+2. Modular Multiplicative Inverse Finder
+   Enter the number (a): 11
+   Enter the modulo (m): 26
+   The modular multiplicative inverse of 11 modulo 26 is: 19
+   Verification: (11 * 19) % 26 = 1
+ '''  
+
+
