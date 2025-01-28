@@ -2,8 +2,8 @@ def el_gamal():
     p = int(input("Enter a prime number p: "))
     g = int(input("Enter a generator g: "))
     d = int(input("Enter a private key d: "))
-    e1 = g  # Public key component 1
-    e2 = pow(g, d, p)  # Public key component 2
+    e1 = g 
+    e2 = pow(g, d, p) 
 
     plaintext = int(input("Enter plaintext (as a number) for El-Gamal encryption: "))
     r = int(input("Enter a random number r: "))
@@ -20,3 +20,15 @@ if __name__ == "__main__":
     print("Plaintext:", plaintext)
     print(f"Ciphertext: c1={c1}, c2={c2}")
     print("Decrypted:", decrypted)
+
+'''
+OUTPUT:
+Enter a prime number p: 43
+Enter a generator g: 6
+Enter a private key d: 9
+Enter plaintext (as a number) for El-Gamal encryption: 789943
+Enter a random number r: 4
+Plaintext: 789943
+Ciphertext: c1=6, c2=33
+Decrypted: 33
+'''
