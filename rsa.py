@@ -7,10 +7,10 @@ def extended_euclidean(a, b):
     return gcd, x, y
 
 def rsa_encrypt_decrypt():
-    p, q = 61, 53  # Example primes
+    p, q = 61, 53 
     n = p * q
     phi = (p - 1) * (q - 1)
-    e = 17  # Public key exponent
+    e = 17  
     _, d, _ = extended_euclidean(e, phi)
     d = d % phi
 
