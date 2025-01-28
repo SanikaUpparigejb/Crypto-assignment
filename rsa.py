@@ -25,3 +25,11 @@ if __name__ == "__main__":
     print("Plaintext:", plaintext)
     print("Encrypted:", encrypted)
     print("Decrypted:", decrypted)
+
+'''
+OUTPUT:
+Enter plaintext for RSA encryption: have a good day
+Plaintext: have a good day
+Encrypted: [2170, 1632, 2578, 1313, 1992, 1632, 1992, 2923, 2185, 2185, 1773, 1992, 1773, 1632, 487]
+Decrypted: have a good day
+'''
